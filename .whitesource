@@ -1,3 +1,9 @@
 {
-  "settingsInheritedFrom": "bengmend/whitesource-config@main"
+  "settingsInheritedFrom": "bengmend/whitesource-config@main",
+  "scanSettings": {
+      "enableReachability": true
+  },
+  "checkRunSettings": {
+    "strictMode": "warning"
+  }
 }
