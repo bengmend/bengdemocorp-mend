@@ -20,6 +20,6 @@ jobs:
             echo Downloading Mend CLI
             curl -LJO https://downloads.mend.io/production/unified/latest/linux_amd64/mend && chmod +x mend
             echo Start Mend CLI scan
-            ./mend dep -u -s "bengdemocorp CI/CD - Github.com//GitHubActions//WebGoat"
-            ./mend code -s "bengdemocorp CI/CD - Github.com//GitHubActions//WebGoat" --remediate
+            ./mend dep -u -s "bengdemocorp CI/CD//GitHubActions//WebGoat"
+            ./mend code -s "bengdemocorp CI/CD//GitHubActions//WebGoat" --remediate
             ./mend image ubuntu:latest
