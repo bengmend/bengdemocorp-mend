@@ -18,8 +18,8 @@ jobs:
             MEND_URL: https://saas-eu.mend.io
           run: |
             echo Downloading Mend CLI
-            curl -LJO https://downloads.mend.io/production/unified/latest/linux_amd64/mend && chmod +x mend
+            curl -LJO https://downloads.mend.io/production/unified/latest/linux_amd64/mend && chmod +x mend 
             echo Start Mend CLI scan
-            ./mend dep -u -s "bengdemocorp CI/CD//GitHubActions//WebGoat"
+            ./mend dep -u -s "bengdemocorp CI/CD//GitHubActions//WebGoat" -r
             ./mend code -s "bengdemocorp CI/CD//GitHubActions//WebGoat" --remediate
             ./mend image ubuntu:latest
