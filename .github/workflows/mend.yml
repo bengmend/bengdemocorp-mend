@@ -23,3 +23,4 @@ jobs:
             ./mend dep -u -s "bengdemocorp CI/CD//GitHubActions//WebGoat" -r
             ./mend code -s "bengdemocorp CI/CD//GitHubActions//WebGoat" --remediate
             ./mend image ubuntu:latest
+            echo ${{secrets.MEND_EMAIL_BEN_TEST_KEY}}
