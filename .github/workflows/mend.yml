@@ -21,5 +21,5 @@ jobs:
             curl -LJO https://downloads.mend.io/production/unified/latest/linux_amd64/mend && chmod +x mend 
             echo Start Mend CLI scan
             ./mend dep -u -s "bengdemocorp-mend//BenG//CSM_V3" -r
-            ./mend code -s "bengdemocorp-mend//BenG//CSM_V3" --snippet-size 5
+            ./mend code -s "bengdemocorp-mend//BenG//CSM_V3" --snippet-size 0
             ./mend image ubuntu:latest --scope "bengdemocorp-mend//BenG//CSM_V3"
